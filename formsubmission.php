@@ -1,3 +1,7 @@
+<!DOCTYPE html>
+<html>
+<body>
+
 <?php 
 if(isset($_POST['submit'])){
     $to = "contact@mrkenyannagy.com";
@@ -17,3 +21,5 @@ if(isset($_POST['submit'])){
     // You can also use header('Location: thank_you.php'); to redirect to another page.
     }
 ?>
+</body>
+</html>
