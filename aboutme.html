@@ -113,16 +113,16 @@
 							</section>
 							<section class="col-6 col-12-narrower">
 								<h3>Get In Touch</h3>
-								<form>
+								<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeizpq0QUtnEw0rz5N-nSFS23SCfa1EHg-ZtNYeHvW_KXEmsw/formresponse?" target="hidden_iframe" onsubmit="submitted=true;">>
 									<div class="row gtr-50">
 										<div class="col-6 col-12-mobilep">
-											<input type="text" name="name" id="name" placeholder="Name" />
+											<input type="text" name="name" id="entry.1416497250" placeholder="Name" />
 										</div>
 										<div class="col-6 col-12-mobilep">
-											<input type="email" name="email" id="email" placeholder="Email" />
+											<input type="email" name="email" id="entry.1785579336" placeholder="Email" />
 										</div>
 										<div class="col-12">
-											<textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
+											<textarea name="message" id="entry.1548750978" placeholder="Message" rows="5"></textarea>
 										</div>
 										<div class="col-12">
 											<ul class="actions">
@@ -131,6 +131,7 @@
 										</div>
 									</div>
 								</form>
+								<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 							</section>
 						</div>
 					</div>
@@ -164,6 +165,13 @@
           $(".loader-wrapper").fadeOut("slow");
         });
     </script>
-
+			<script src="assets/js/jquery.min.js"></script>
+			<script type="text/javascript">var submitted=false;</script>
+			<script type="text/javascript">
+			$('#gform').on('submit', function(e) {
+  			$('#gform *').fadeOut(2000);
+  			$('#gform').prepend('Your submission has been processed...');
+  	});
+</script>
 	</body>
 </html>
