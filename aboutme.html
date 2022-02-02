@@ -113,7 +113,7 @@
 							</section>
 							<section class="col-6 col-12-narrower">
 								<h3>Get In Touch</h3>
-								<form class="gform" method="POST" data-email=" action="https://script.google.com/macros/s/AKfycbznT2Y4p3RfaXOigJkg2oSF6KhZvWBFSly471ZS6g/exec" target="hidden_iframe" onsubmit="submitted=true;">
+								<form class="gform" method="POST" data-email="" action="https://script.google.com/macros/s/AKfycbznT2Y4p3RfaXOigJkg2oSF6KhZvWBFSly471ZS6g/exec">
 									<div class="row gtr-50">
 										<div class="col-6 col-12-mobilep">
 											<input type="text" name="name" id="" placeholder="Name">
@@ -131,7 +131,7 @@
 										</div>
 									</div>
 								</form>
-								<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+								
 							</section>
 						</div>
 					</div>
@@ -160,18 +160,8 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script>
-        $(window).on("load",function(){
-          $(".loader-wrapper").fadeOut("slow");
-        });
-    </script>
-			<script src="assets/js/jquery.min.js"></script>
-			<script type="text/javascript">var submitted=false;</script>
-			<script type="text/javascript">
-			$('#gform').on('submit', function(e) {
-  			$('#gform *').fadeOut(2000);
-  			$('#gform').prepend('Your submission has been processed...');
-  	});
-</script>
+			<script> $(window).on("load",function(){$(".loader-wrapper").fadeOut("slow");});</script>
+			<script data-cfasync="false" src="form-submission-handler.js"></script>
+
 	</body>
 </html>
