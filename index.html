@@ -5,287 +5,86 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#0A1322">
   <meta name="color-scheme" content="dark">
-  <meta name="description" content="Aegis Automated Solutions Consortium — applied systems research, automation, experimental computing, and evidence-aware engineering.">
-  <meta property="og:title" content="Aegis Automated Solutions Consortium">
-  <meta property="og:description" content="Applied systems research, automation, experimental computing, and evidence-aware engineering.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://aegisautomated.solutions/">
-  <title>Aegis Automated Solutions Consortium</title>
-
+  <meta name="description" content="Aegis Automated Solutions Consortium">
+  <title>AEGIS</title>
   <link rel="canonical" href="https://aegisautomated.solutions/">
-  <link rel="manifest" href="site.webmanifest">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
-  <header class="site-header">
-    <div class="shell header-inner">
-      <a class="brand" href="./" aria-label="Aegis Automated Solutions Consortium home">
-        <img src="assets/favicon.svg" alt="" width="42" height="42">
-        <span>
-          <strong>AEGIS</strong>
-          <small>Automated Solutions Consortium</small>
-        </span>
-      </a>
-
-      <nav class="desktop-nav" aria-label="Primary navigation">
-        <a href="#research">Research</a>
-        <a href="#projects">Projects</a>
-        <a href="#methodology">Methodology</a>
-        <a href="#about">About</a>
-      </nav>
-
-      <div class="header-actions">
-        <button class="member-link" type="button" disabled aria-disabled="true">
-          <span>Member Access</span>
-          <small>Coming online</small>
-        </button>
-
-        <details class="mobile-nav">
-          <summary aria-label="Open navigation">
-            <span></span><span></span><span></span>
-          </summary>
-          <div class="mobile-menu">
-            <a href="#research">Research</a>
-            <a href="#projects">Projects</a>
-            <a href="#methodology">Methodology</a>
-            <a href="#about">About</a>
-            <div class="mobile-member">
-              <strong>Member Access</strong>
-              <span>Coming online</span>
-            </div>
-          </div>
-        </details>
+  <main class="gateway">
+    <section class="identity" aria-label="Aegis Automated Solutions Consortium">
+      <div class="crest" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 288">
+          <defs>
+            <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#22D3EE"/>
+              <stop offset=".34" stop-color="#3B82F6"/>
+              <stop offset=".68" stop-color="#8B5CF6"/>
+              <stop offset="1" stop-color="#10B981"/>
+            </linearGradient>
+            <linearGradient id="lambda" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#F8FAFC"/>
+              <stop offset=".32" stop-color="#3B82F6"/>
+              <stop offset=".78" stop-color="#8B5CF6"/>
+              <stop offset="1" stop-color="#22D3EE"/>
+            </linearGradient>
+            <radialGradient id="face" cx=".5" cy=".38" r=".7">
+              <stop offset="0" stop-color="#33548d"/>
+              <stop offset=".7" stop-color="#152845"/>
+              <stop offset="1" stop-color="#0A1322"/>
+            </radialGradient>
+            <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+              <feGaussianBlur stdDeviation="4" result="b"/>
+              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+          <path d="M128 8 231 48v80c0 75-40 124-103 151C65 252 25 203 25 128V48Z" fill="#07111f" stroke="url(#edge)" stroke-width="6"/>
+          <path d="M128 20 216 54v74c0 65-34 107-88 132-54-25-88-67-88-132V54Z" fill="none" stroke="#1e3d69" stroke-width="2"/>
+          <path d="M128 24v235" stroke="#F59E0B" stroke-width="2" opacity=".72"/>
+          <path d="M128 18l6 12-6 12-6-12Z" fill="#F59E0B"/>
+          <path d="M128 266l6-12-6-12-6 12Z" fill="#F59E0B"/>
+          <ellipse cx="128" cy="104" rx="38" ry="44" fill="url(#face)"/>
+          <path d="M93 90c12-28 25-38 35-38s23 10 35 38c-12-11-24-16-35-16S105 79 93 90Z" fill="#173257"/>
+          <path d="M96 117c11-11 21-16 32-16s21 5 32 16c-10 25-21 38-32 38s-22-13-32-38Z" fill="#0e1c31"/>
+          <path d="M98 118c12 4 22 6 30 6s18-2 30-6c-2 21-14 37-30 37s-28-16-30-37Z" fill="#142847"/>
+          <g fill="none" stroke-linecap="round" stroke-width="4">
+            <path d="M103 72C79 50 62 65 69 86s-8 31-25 26" stroke="#22D3EE"/>
+            <path d="M97 86C70 82 63 102 76 117s-2 30-23 33" stroke="#3B82F6"/>
+            <path d="M101 117C76 127 79 148 95 158s6 28-12 40" stroke="#10B981"/>
+            <path d="M153 72c24-22 41-7 34 14s8 31 25 26" stroke="#8B5CF6"/>
+            <path d="M159 86c27-4 34 16 21 31s2 30 23 33" stroke="#22D3EE"/>
+            <path d="M155 117c25 10 22 31 6 41s-6 28 12 40" stroke="#8B5CF6"/>
+          </g>
+          <g filter="url(#glow)">
+            <circle cx="69" cy="86" r="4.5" fill="#22D3EE"/>
+            <circle cx="44" cy="112" r="4.5" fill="#F59E0B"/>
+            <circle cx="76" cy="117" r="4.5" fill="#3B82F6"/>
+            <circle cx="53" cy="150" r="4.5" fill="#8B5CF6"/>
+            <circle cx="95" cy="158" r="4.5" fill="#10B981"/>
+            <circle cx="187" cy="86" r="4.5" fill="#8B5CF6"/>
+            <circle cx="212" cy="112" r="4.5" fill="#10B981"/>
+            <circle cx="180" cy="117" r="4.5" fill="#22D3EE"/>
+          </g>
+          <path d="M128 78 72 214h31l25-66 25 66h31Z" fill="url(#lambda)" stroke="#d9e8ff" stroke-width="2"/>
+          <path d="M128 78 72 214h31l25-66 25 66h31Z" fill="none" stroke="#F59E0B" stroke-width="1.2" opacity=".6"/>
+        </svg>
       </div>
-    </div>
-  </header>
-
-  <main id="main">
-    <section class="hero shell" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <div class="eyebrow">Aegis Automated Solutions Consortium</div>
-        <h1 id="hero-title">Applied research for complex technical systems.</h1>
-        <p class="hero-lede">
-          AASC is an independent technical research consortium focused on
-          systems investigation, automation, experimental computing, and
-          evidence-aware engineering.
-        </p>
-
-        <div class="hero-actions">
-          <a class="button primary" href="#research">Explore our work</a>
-          <button class="button secondary" type="button" disabled aria-disabled="true">
-            Member Access
-            <span>Coming online</span>
-          </button>
-        </div>
-
-        <div class="domain-note">
-          <span>aegisautomated.solutions</span>
-          <small>Public identity and research presence</small>
-        </div>
-      </div>
-
-      <div class="hero-mark" aria-hidden="true">
-        <div class="crest-halo"></div>
-        <img src="assets/aegis-crest.svg" alt="" width="360" height="405">
-      </div>
+      <h1>AEGIS</h1>
+      <p>Aegis Automated Solutions Consortium</p>
     </section>
 
-    <section class="statement-band">
-      <div class="shell statement-grid">
-        <p>
-          AASC approaches technical problems by combining direct observation,
-          bounded experimentation, computational tooling, and careful provenance.
-        </p>
-        <div class="statement-tags" aria-label="Research principles">
-          <span>Observe first</span>
-          <span>Preserve evidence</span>
-          <span>Automate carefully</span>
-        </div>
+    <section class="login-box" aria-labelledby="member-title">
+      <div class="login-status">
+        <span class="status-dot"></span>
+        Member Access
       </div>
-    </section>
-
-    <section id="research" class="section shell">
-      <div class="section-heading">
-        <span class="eyebrow">Research</span>
-        <h2>Investigating systems from the evidence outward.</h2>
-        <p>
-          Research at AASC centers on understanding how technical systems
-          behave in practice: their interfaces, constraints, dependencies,
-          failure modes, and opportunities for responsible automation.
-        </p>
-      </div>
-
-      <div class="card-grid three">
-        <article class="feature-card">
-          <span class="card-index">01</span>
-          <h3>Systems Analysis</h3>
-          <p>
-            Structured investigation of embedded, networked, and software
-            systems through reproducible observation and controlled testing.
-          </p>
-        </article>
-
-        <article class="feature-card">
-          <span class="card-index">02</span>
-          <h3>Automation & Tooling</h3>
-          <p>
-            Building practical tools that reduce repetitive work while
-            preserving operator visibility, provenance, and bounded authority.
-          </p>
-        </article>
-
-        <article class="feature-card">
-          <span class="card-index">03</span>
-          <h3>Experimental Computing</h3>
-          <p>
-            Exploring useful computing architectures with a strong emphasis
-            on resource efficiency, interoperability, and measurable behavior.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <section id="projects" class="section shell split-section">
-      <div class="section-heading compact">
-        <span class="eyebrow">Projects</span>
-        <h2>Research infrastructure built around real questions.</h2>
-        <p>
-          AASC projects span hardware, software, research tooling, and
-          local-compute infrastructure. Public project documentation will be
-          added here as work reaches an appropriate publication stage.
-        </p>
-      </div>
-
-      <div class="project-stack">
-        <article class="project-row">
-          <div class="project-icon">Σ</div>
-          <div>
-            <h3>Research Systems</h3>
-            <p>Repeatable environments for analysis, testing, and evidence preservation.</p>
-          </div>
-          <span>In development</span>
-        </article>
-
-        <article class="project-row">
-          <div class="project-icon">A</div>
-          <div>
-            <h3>Automation Infrastructure</h3>
-            <p>Operator-visible workflows for coordinating bounded technical work.</p>
-          </div>
-          <span>In development</span>
-        </article>
-
-        <article class="project-row">
-          <div class="project-icon">E</div>
-          <div>
-            <h3>Experimental Platforms</h3>
-            <p>Applied investigations across computing, embedded systems, and interfaces.</p>
-          </div>
-          <span>Ongoing</span>
-        </article>
-      </div>
-    </section>
-
-    <section id="methodology" class="section methodology">
-      <div class="shell methodology-inner">
-        <div class="section-heading compact">
-          <span class="eyebrow">Methodology</span>
-          <h2>Evidence before certainty.</h2>
-          <p>
-            AASC separates what is observed, inferred, unknown, and contradicted.
-            Automation is useful only when its scope and authority remain visible.
-          </p>
-        </div>
-
-        <div class="method-grid">
-          <div>
-            <strong>01</strong>
-            <h3>Observe</h3>
-            <p>Begin with measurable behavior and primary evidence.</p>
-          </div>
-          <div>
-            <strong>02</strong>
-            <h3>Bound</h3>
-            <p>Define what an experiment or automated process may and may not do.</p>
-          </div>
-          <div>
-            <strong>03</strong>
-            <h3>Preserve</h3>
-            <p>Keep provenance, uncertainty, and evidence lineage intact.</p>
-          </div>
-          <div>
-            <strong>04</strong>
-            <h3>Reproduce</h3>
-            <p>Prefer results that can be independently checked and repeated.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="section shell about-section">
-      <div class="about-mark" aria-hidden="true">
-        <img src="assets/aegis-crest.svg" alt="">
-      </div>
-
-      <div class="section-heading compact">
-        <span class="eyebrow">About</span>
-        <h2>A small institution built from applied work.</h2>
-        <p>
-          Aegis Automated Solutions Consortium exists to support serious,
-          hands-on technical research without separating experimentation from
-          documentation, provenance, or responsible system design.
-        </p>
-        <p>
-          This public site will grow as research is prepared for release.
-          Operational systems remain separate from the public web presence.
-        </p>
-      </div>
-    </section>
-
-    <section class="member-band">
-      <div class="shell member-band-inner">
-        <div>
-          <span class="eyebrow">Member Access</span>
-          <h2>AASC operational access is coming online.</h2>
-          <p>
-            The member console will be available through a separately protected
-            access layer. No authentication is performed by this public site.
-          </p>
-        </div>
-
-        <button class="member-access-large" type="button" disabled aria-disabled="true">
-          <span>Member Access</span>
-          <small>console.aasc.one · coming online</small>
-        </button>
-      </div>
+      <h2 id="member-title">Protected console</h2>
+      <p>Member authentication is coming online.</p>
+      <button type="button" disabled aria-disabled="true">Coming online</button>
+      <small>console.aasc.one</small>
     </section>
   </main>
-
-  <footer class="site-footer">
-    <div class="shell footer-inner">
-      <div class="footer-brand">
-        <img src="assets/favicon.svg" alt="" width="32" height="32">
-        <div>
-          <strong>AEGIS</strong>
-          <span>Aegis Automated Solutions Consortium</span>
-        </div>
-      </div>
-
-      <div class="footer-domains">
-        <span>aegisautomated.solutions</span>
-        <small>Public identity</small>
-      </div>
-
-      <div class="footer-domain-secondary">
-        <span>aasc.one</span>
-        <small>Operational namespace</small>
-      </div>
-    </div>
-  </footer>
-  <script src="script.js" defer></script>
 </body>
 </html>

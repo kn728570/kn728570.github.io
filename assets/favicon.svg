@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title">
+<title id="title">Aegis Lambda shield</title>
+<defs>
+<linearGradient id="edge" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22D3EE"/><stop offset=".36" stop-color="#3B82F6"/><stop offset=".72" stop-color="#8B5CF6"/><stop offset="1" stop-color="#10B981"/></linearGradient>
+<linearGradient id="mark" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F8FAFC"/><stop offset=".38" stop-color="#3B82F6"/><stop offset=".8" stop-color="#8B5CF6"/><stop offset="1" stop-color="#22D3EE"/></linearGradient>
+</defs>
+<rect width="256" height="256" rx="54" fill="#0A1322"/>
+<path d="M128 24 215 56v66c0 58-32 95-87 117-55-22-87-59-87-117V56Z" fill="#081322" stroke="url(#edge)" stroke-width="10"/>
+<path d="M128 39 199 65v57c0 46-25 76-71 96-46-20-71-50-71-96V65Z" fill="none" stroke="#17335b" stroke-width="3"/>
+<path d="M128 65 78 191h29l21-57 21 57h29Z" fill="url(#mark)"/><path d="M128 65 78 191h29l21-57 21 57h29Z" fill="none" stroke="#F59E0B" stroke-width="2" opacity=".55"/>
+<circle cx="71" cy="82" r="5" fill="#22D3EE"/><circle cx="185" cy="82" r="5" fill="#8B5CF6"/><circle cx="61" cy="123" r="4" fill="#10B981"/><circle cx="195" cy="123" r="4" fill="#3B82F6"/>
+<path d="M76 82c22 8 24 24 11 37M180 82c-22 8-24 24-11 37" fill="none" stroke="url(#edge)" stroke-width="4" stroke-linecap="round"/>
+<path d="M128 26l6 12-6 12-6-12Z" fill="#F59E0B"/>
+</svg>
